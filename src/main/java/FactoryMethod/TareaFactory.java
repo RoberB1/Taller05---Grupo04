@@ -4,16 +4,13 @@
  */
 package FactoryMethod;
 
+import java.util.Date;
+
 /**
  *
  * @author rb122
  */
-public interface Tarea {
+public interface TareaFactory {
     
-    
-    public void mostrarDetalle();
-    
-    public int getId();
-    
-    void setEstado(String estado);
+    public void crearTarea(String tipo, String descripcion, int prioridad, Date fechaVencimiento);
 }
