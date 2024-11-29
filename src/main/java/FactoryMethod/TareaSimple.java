@@ -5,12 +5,13 @@
 package FactoryMethod;
 
 import java.util.Date;
+import Observer.Observer;
 
 /**
  *
  * @author rb122
  */
-public class TareaSimple implements Tarea{
+public class TareaSimple implements Tarea, Observer{
     private int id;
     private String descripcion;
     private int prioridad;
@@ -32,5 +33,10 @@ public class TareaSimple implements Tarea{
     @Override
     public void setEstado(String estado) {
         //Codigo
+    }
+
+    @Override
+    public void update(String message) {
+        System.out.println("Notificacion");
     }
 }
