@@ -2,20 +2,8 @@ package Observer;
 
 public interface Observable {
 
-    
-} Observable {
+    void agregarObservers(Observer observer);
+    void eliminarObservers(Observer observer);
+    void notifyObservers();
 
-    public void agregarObservers(Observer observer){
-
-    }
-
-    public void eliminarObservers(Observer observer){
-
-    }
-
-    public void notifyObservers(Observer observer){
-
-    }
-
-    
 } 
