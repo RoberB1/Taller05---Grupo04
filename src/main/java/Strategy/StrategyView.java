@@ -9,5 +9,5 @@ package Strategy;
  * @author rb122
  */
 public interface StrategyView {
-    
+    public void moldearVista();
 }
